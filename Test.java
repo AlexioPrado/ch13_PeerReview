@@ -15,9 +15,14 @@ public class Test {
 }
 
 abstract class GeometricObject1 implements Comparable {
-  
-}
-
+  public Circle1 max(Circle1 one, Circle1 two) {
+    if (one.getRadius() > two.getRadius()){
+      return one;
+    } else {
+      return two;
+    }
+  }
+} 
 
 // Circle.java: The circle class that extends GeometricObject
 class Circle1 extends GeometricObject1 { 
